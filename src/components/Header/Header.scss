@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__container {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--logo {
+    width: 207px;
+    height: 27px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  &--nav {
+    display: none;
+  }
+}

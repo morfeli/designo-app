@@ -1,0 +1,76 @@
+.toggle-button {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin-top: 0.65rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  //   height: auto;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  z-index: 100;
+}
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.middle {
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .top {
+  transform: rotate(-50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: -10px;
+  background-color: black;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
+  transform: rotate(50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: 10px;
+  background-color: black;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+}
