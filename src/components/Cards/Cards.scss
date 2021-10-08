@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.webdesign__container {
+  background-image: url("../../assets/home/mobile/image-web-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  &--h1 {
+    color: white;
+  }
+
+  &--p {
+    color: white;
+  }
+}
+
+.appdesign__container {
+  background-image: url("../../assets/home/mobile/image-app-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  &--h1 {
+    color: white;
+  }
+
+  &--p {
+    color: white;
+  }
+}
+
+.graphicdesign__container {
+  background-image: url("../../assets/home/mobile/image-graphic-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  &--h1 {
+    color: white;
+  }
+
+  &--p {
+    color: white;
+  }
+}
