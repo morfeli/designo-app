@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../styles/partials.scss";
+
+.contactus__container {
+  width: 327px;
+  height: 379px;
+  background-color: $peach;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+
+  &--h1 {
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    width: 279px;
+  }
+  &--p {
+    font-family: $jost;
+    font-weight: $fontreg;
+    color: white;
+    text-align: center;
+  }
+
+  &--btn {
+    width: 152px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+  }
+}

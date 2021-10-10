@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../styles/partials.scss";
+
+.footer__container {
+  width: 375px;
+  height: 815px;
+  background-color: black;
+  padding-top: 15rem;
+
+  &--innerBox {
+    width: 327px;
+    height: 498px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &--img {
+    width: 202px;
+    height: 27px;
+  }
+
+  &--divider {
+    width: 327px;
+  }
+
+  &--ul {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--li {
+    list-style: none;
+    font-family: $jost;
+  }
+
+  &--textBox {
+    text-align: center;
+  }
+
+  &--li {
+    color: white;
+  }
+
+  &--strong {
+    color: white;
+    line-height: 26px;
+    font-family: $jost;
+    font-weight: $fontmed;
+    color: $darkgrey;
+  }
+  &--p {
+    color: white;
+    line-height: 26px;
+    font-family: $jost;
+    font-weight: $fontreg;
+    color: $darkgrey;
+  }
+
+  &--socialBox {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
