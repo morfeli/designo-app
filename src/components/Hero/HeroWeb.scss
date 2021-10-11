@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../styles/partials.scss";
+
+.web__container {
+  width: 375px;
+  height: 320px;
+  background-color: $peach;
+
+  &--h1 {
+    padding-top: 5rem;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 32px;
+    color: $white;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  &--p {
+    margin-top: 2rem;
+    font-family: $jost;
+    font-weight: $fontreg;
+    font-size: 15px;
+    text-align: center;
+    color: $white;
+  }
+}
