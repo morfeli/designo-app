@@ -5,6 +5,7 @@ import eyecamImg from "../../assets/app-design/desktop/image-eyecam.jpg";
 import faceitImg from "../../assets/app-design/desktop/image-faceit.jpg";
 import todoImg from "../../assets/app-design/desktop/image-todo.jpg";
 import loopstudiosImg from "../../assets/app-design/desktop/image-loopstudios.jpg";
+import "./AppDesignCards.scss";
 
 const DUMMY_APPCARDS = [
   {

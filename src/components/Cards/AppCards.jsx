@@ -1,3 +1,5 @@
+import "./AppCards.scss";
+
 const AppCards = (props) => {
   return (
     <li className="appcards__container">

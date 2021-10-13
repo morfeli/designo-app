@@ -16,8 +16,8 @@ function App() {
     <div>
       <Header />
       {/* <HomePage /> */}
-      <WebDesign />
-      {/* <AppDesign /> */}
+      {/* <WebDesign /> */}
+      <AppDesign />
       {/* <GraphicDesign /> */}
       {/* <AboutUs /> */}
       {/* <LocationsPage /> */}
