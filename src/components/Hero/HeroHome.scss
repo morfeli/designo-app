@@ -7,13 +7,21 @@
 @import "../../../styles/partials.scss";
 
 .hero__container {
-  width: 375px;
+  width: 100vw;
   height: 843px;
   background-color: $peach;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow: hidden;
+
+  &--bitMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-position: 0% 30%;
+  }
 
   &--h1 {
     margin-top: 5rem;
@@ -32,6 +40,7 @@
     font-size: 15px;
     text-align: center;
     color: $white;
+    width: 327px;
   }
 
   &--btn {
@@ -41,6 +50,7 @@
     padding: 1rem;
     border-radius: 10px;
     border: none;
+    box-shadow: 10px 5px 5px black;
   }
 
   &--imgBox {

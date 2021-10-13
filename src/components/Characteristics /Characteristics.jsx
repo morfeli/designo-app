@@ -7,21 +7,21 @@ import "./Characteristics.scss";
 
 const DUMMY_ARRAY = [
   {
-    id: "0",
+    id: "first",
     image: passionateImg,
     title: "Passionate",
     description:
       "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
   },
   {
-    id: "1",
+    id: "second",
     image: resourcefulImg,
     title: "Resourceful",
     description:
       "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.",
   },
   {
-    id: "2",
+    id: "third",
     image: friendlyImg,
     title: "Friendly",
     description:
@@ -35,6 +35,7 @@ const Characteristics = () => {
       {DUMMY_ARRAY.map((item) => (
         <CharacterCards
           key={item.id}
+          id={item.id}
           title={item.title}
           image={item.image}
           description={item.description}

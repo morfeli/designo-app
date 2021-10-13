@@ -1,8 +1,9 @@
 import "./CharacterCard.scss";
+import React from "react";
 
 const CharacterCards = (props) => {
   return (
-    <li className="li__container">
+    <li className="li__container" id={props.id}>
       <div className="li__container--imgBox">
         <img className="li__container--img" src={props.image} alt="img" />
       </div>

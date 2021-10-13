@@ -7,9 +7,9 @@
 @import "../../../styles/partials.scss";
 
 .footer__container {
-  width: 375px;
+  width: 100vw;
   height: 815px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   padding-top: 15rem;
 
   &--innerBox {

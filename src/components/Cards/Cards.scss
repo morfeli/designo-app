@@ -7,7 +7,8 @@
 @import "../../../styles/partials.scss";
 
 .webdesign__container {
-  background-image: url("../../assets/home/mobile/image-web-design.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/home/mobile/image-web-design.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,6 +20,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: rb;
   &--h1 {
     color: white;
     margin-bottom: 1.5rem;
@@ -34,7 +36,8 @@
 }
 
 .appdesign__container {
-  background-image: url("../../assets/home/mobile/image-app-design.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/home/mobile/image-app-design.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -61,7 +64,8 @@
 }
 
 .graphicdesign__container {
-  background-image: url("../../assets/home/mobile/image-graphic-design.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/home/mobile/image-graphic-design.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

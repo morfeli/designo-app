@@ -19,10 +19,15 @@
     height: 202px;
     display: flex;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &--img {
     width: 188px;
     height: 162px;
+    object-fit: none;
+    margin-top: 1rem;
   }
   &--h1 {
     font-family: $jost;
@@ -38,4 +43,14 @@
     line-height: 26px;
     text-align: center;
   }
+}
+
+#second .li__container--img {
+  width: 184px;
+  height: 162px;
+}
+
+#third .li__container--img {
+  width: 201px;
+  height: 128px;
 }
