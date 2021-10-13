@@ -4,7 +4,9 @@ import HomePage from "./pages/HomePage";
 import WebDesign from "./pages/WebDesign";
 import AppDesign from "./pages/AppDesign";
 import GraphicDesign from "./pages/GraphicDesign";
+import LocationsPage from "./pages/LocationsPage";
 import AboutUs from "./pages/AboutUs";
+import ContactPage from "./pages/ContactPage";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import Footer from "./components/Footer/Footer";
@@ -17,7 +19,9 @@ function App() {
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
       {/* <GraphicDesign /> */}
-      <AboutUs />
+      {/* <AboutUs /> */}
+      {/* <LocationsPage /> */}
+      <ContactPage />
       <Footer />
     </div>
   );
