@@ -1,6 +1,5 @@
 import React from "react";
 import GraphicCards from "./GraphicCards";
-
 import timbrownImg from "../../assets/graphic-design/desktop/image-change.jpg";
 import boxWater from "../../assets/graphic-design/desktop/image-boxed-water.jpg";
 import keepupImg from "../../assets/graphic-design/desktop/image-science.jpg";

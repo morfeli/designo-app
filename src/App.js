@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import WebDesign from "./pages/WebDesign";
 import AppDesign from "./pages/AppDesign";
 import GraphicDesign from "./pages/GraphicDesign";
+import AboutUs from "./pages/AboutUs";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import Footer from "./components/Footer/Footer";
@@ -15,7 +16,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
-      <GraphicDesign />
+      {/* <GraphicDesign /> */}
+      <AboutUs />
       <Footer />
     </div>
   );
