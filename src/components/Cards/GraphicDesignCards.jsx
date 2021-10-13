@@ -3,6 +3,7 @@ import GraphicCards from "./GraphicCards";
 import timbrownImg from "../../assets/graphic-design/desktop/image-change.jpg";
 import boxWater from "../../assets/graphic-design/desktop/image-boxed-water.jpg";
 import keepupImg from "../../assets/graphic-design/desktop/image-science.jpg";
+import "./GraphicDesignCards.scss";
 
 const DUMMY_GRAPHICCARDS = [
   {
@@ -27,7 +28,7 @@ const DUMMY_GRAPHICCARDS = [
 
 const GraphicDesignCards = () => {
   return (
-    <ul className="appdesign__ul">
+    <ul className="graphicdesign__ul">
       {DUMMY_GRAPHICCARDS.map((item) => (
         <GraphicCards
           image={item.image}

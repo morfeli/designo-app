@@ -11,7 +11,12 @@ const GraphicDesign = () => {
       <HeroGraphic />
       <GraphicDesignCards />
       <div
-        style={{ display: "flex", flexDirection: "column" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          height: "600px",
+          justifyContent: "space-between",
+        }}
         className="container"
       >
         <AppCard />

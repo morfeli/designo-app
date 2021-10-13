@@ -7,9 +7,20 @@
 @import "../../../styles/partials.scss";
 
 .graphic__container {
-  width: 375px;
+  width: 100vw;
   height: 320px;
   background-color: $peach;
+
+  &--bitMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 18rem;
+    background-position-x: 80%;
+    height: 100vh;
+  }
 
   &--h1 {
     padding-top: 5rem;
@@ -18,7 +29,6 @@
     font-size: 32px;
     color: $white;
     line-height: 36px;
-    text-align: center;
   }
 
   &--p {
@@ -28,5 +38,6 @@
     font-size: 15px;
     text-align: center;
     color: $white;
+    width: 327px;
   }
 }

@@ -17,8 +17,8 @@ function App() {
       <Header />
       {/* <HomePage /> */}
       {/* <WebDesign /> */}
-      <AppDesign />
-      {/* <GraphicDesign /> */}
+      {/* <AppDesign /> */}
+      <GraphicDesign />
       {/* <AboutUs /> */}
       {/* <LocationsPage /> */}
       {/* <ContactPage /> */}

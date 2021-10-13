@@ -1,3 +1,5 @@
+import "./GraphicCards.scss";
+
 const GraphicCards = (props) => {
   return (
     <li className="graphiccards__container">
