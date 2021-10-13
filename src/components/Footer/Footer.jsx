@@ -18,13 +18,13 @@ const Footer = () => {
         <hr className="footer__container--divider" />
         <ul className="footer__container--ul">
           <Link style={{ textDecoration: "none" }} to="/aboutus">
-            <li className="footer__container--li">Our Company</li>
+            <li className="footer__container--li">OUR COMPANY</li>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/locations">
-            <li className="footer__container--li">Locations</li>
+            <li className="footer__container--li">LOCATIONS</li>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/contact">
-            <li className="footer__container--li">Contact</li>
+            <li className="footer__container--li">CONTACT</li>
           </Link>
         </ul>
         <div className="footer__container--textBox">

@@ -7,26 +7,38 @@
 @import "../../../styles/partials.scss";
 
 .web__container {
-  width: 375px;
+  width: 100vw;
   height: 320px;
   background-color: $peach;
+  // overflow: hidden;
+
+  &--bitMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 18rem;
+    background-position-x: 80%;
+    height: 100vh;
+  }
 
   &--h1 {
-    padding-top: 5rem;
+    padding-top: 6rem;
     font-family: $jost;
     font-weight: $fontmed;
     font-size: 32px;
     color: $white;
     line-height: 36px;
-    text-align: center;
+    margin-bottom: 2rem;
   }
 
   &--p {
-    margin-top: 2rem;
     font-family: $jost;
     font-weight: $fontreg;
     font-size: 15px;
     text-align: center;
     color: $white;
+    width: 327px;
   }
 }

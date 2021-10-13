@@ -93,3 +93,8 @@
     letter-spacing: 5px;
   }
 }
+
+.appdesign__container:hover {
+  background: linear-gradient(rgb(255, 173, 155), rgb(255, 173, 155)),
+    url("../../assets/home/mobile/image-app-design.jpg");
+}
