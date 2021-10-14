@@ -20,8 +20,8 @@ function App() {
       {/* <AppDesign /> */}
       {/* <GraphicDesign /> */}
       {/* <AboutUs /> */}
-      <LocationsPage />
-      {/* <ContactPage /> */}
+      {/* <LocationsPage /> */}
+      <ContactPage />
       <Footer />
     </div>
   );

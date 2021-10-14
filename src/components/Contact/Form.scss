@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../styles/partials.scss";
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 764px;
+  background-color: $peach;
+
+  &--title {
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 32px;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &--p {
+    width: 327px;
+    text-align: center;
+    line-height: 25px;
+    font-family: $jost;
+    font-weight: $fontreg;
+    font-size: 15px;
+    color: white;
+  }
+
+  &--form {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  &--btn {
+    width: 152px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+  }
+}
+
+input {
+  width: 327px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: solid white 2px;
+  font-family: $jost;
+  font-weight: $fontmed;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+}
