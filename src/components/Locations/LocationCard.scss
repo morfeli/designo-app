@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../styles/partials.scss";
+
+.locationcard__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+
+  list-style: none;
+
+  &--img {
+    width: 100vw;
+    height: 320px;
+    object-fit: fill;
+  }
+
+  &--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 394px;
+    width: 100vw;
+    background-color: #fdf3f0;
+    padding-bottom: 2rem;
+  }
+
+  &--textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    justify-content: space-evenly;
+  }
+
+  &--contactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+    justify-content: space-evenly;
+  }
+
+  &--title {
+    font-family: $jost;
+    font-weight: $fontmed;
+    color: $peach;
+  }
+
+  &--strong {
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 18px;
+  }
+  &--p {
+    font-family: $jost;
+    font-weight: $fontreg;
+    width: 327px;
+  }
+
+  &--contact {
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 18px;
+  }
+}

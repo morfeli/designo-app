@@ -39,7 +39,16 @@ const DUMMY_MAP = [
 
 const Locations = () => {
   return (
-    <ul>
+    <ul
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        height: "2000px",
+        marginTop: "1rem",
+      }}
+    >
       {DUMMY_MAP.map((location) => (
         <LocationCard
           key={location.id}
