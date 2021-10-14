@@ -7,9 +7,12 @@
 @import "../../../styles/partials.scss";
 
 .aboutus__container {
-  width: 375px;
+  width: 100vw;
   height: 715px;
   background-color: $peach;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--imgBox {
     margin: 0 auto;
@@ -31,11 +34,13 @@
   }
 
   &--p {
-    margin-top: 2rem;
+    padding-top: 2rem;
+    margin: 0 auto;
     font-family: $jost;
     font-weight: $fontreg;
     font-size: 15px;
     text-align: center;
     color: $white;
+    width: 327px;
   }
 }

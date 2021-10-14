@@ -18,8 +18,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
-      <GraphicDesign />
-      {/* <AboutUs /> */}
+      {/* <GraphicDesign /> */}
+      <AboutUs />
       {/* <LocationsPage /> */}
       {/* <ContactPage /> */}
       <Footer />

@@ -5,27 +5,33 @@ import ukImg from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import LocationCard from "./LocationCard";
 
 const DUMMY_LOCATIONS = [
-  {
-    image: canadaImg,
-    title: "Canada",
-  },
-  {
-    image: australiaImg,
-    title: "Australia",
-  },
-  {
-    image: ukImg,
-    title: "United Kingdom",
-  },
+  { id: "first", image: canadaImg, title: "Canada" },
+  { id: "second", image: australiaImg, title: "Australia" },
+  { id: "third", image: ukImg, title: "United Kingdom" },
 ];
 
 const LocationCards = () => {
   return (
-    <h1>
+    <ul
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "375px",
+        height: "1188px",
+        justifyContent: "space-evenly",
+        margin: "0 auto",
+      }}
+    >
       {DUMMY_LOCATIONS.map((location) => (
-        <LocationCard image={location.image} title={location.title} />
+        <LocationCard
+          key={location.id}
+          id={location.id}
+          image={location.image}
+          title={location.title}
+        />
       ))}
-    </h1>
+    </ul>
   );
 };
 
