@@ -49,7 +49,7 @@
   }
 }
 
-input {
+.control {
   width: 327px;
   background-color: transparent;
   border: none;
@@ -61,4 +61,34 @@ input {
   padding-left: 1rem;
   margin-bottom: 2rem;
   color: white;
+}
+
+.invalid {
+  border-bottom: solid red 2px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 327px;
+  outline: none;
+  font-family: $jost;
+  font-weight: $fontmed;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.invalid::placeholder {
+  color: red;
+  opacity: 0.5;
+}
+
+.invalid-message {
+  font-family: $jost;
+  font-weight: $fontreg;
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+  color: maroon;
 }
