@@ -75,13 +75,15 @@ const Form = () => {
   }
   return (
     <section className="form__container" onSubmit={confirmHandler}>
-      <h1 className="form__container--title">Contact Us</h1>
-      <p className="form__container--p">
-        Ready to take it to the next level? Let’s talk about your project or
-        idea and find out how we can help your business grow. If you are looking
-        for unique digital experiences that’s relatable to your users, drop us a
-        line.
-      </p>
+      <div className="form__container--textBox">
+        <h1 className="form__container--title">Contact Us</h1>
+        <p className="form__container--p">
+          Ready to take it to the next level? Let’s talk about your project or
+          idea and find out how we can help your business grow. If you are
+          looking for unique digital experiences that’s relatable to your users,
+          drop us a line.
+        </p>
+      </div>
 
       <form className="form__container--form">
         <div>

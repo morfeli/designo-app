@@ -19,4 +19,9 @@
     width: 690px;
     height: 670px;
   }
+
+  @include desktop {
+    flex-direction: row;
+    width: 1110px;
+  }
 }

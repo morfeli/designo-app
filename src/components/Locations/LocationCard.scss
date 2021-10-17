@@ -19,6 +19,19 @@
     width: 100vw;
     height: 320px;
     object-fit: fill;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--imgtab {
+    display: none;
+    @include tablet {
+      display: flex;
+      width: 689px;
+      height: 326px;
+      border-radius: 25px;
+    }
   }
 
   &--box {
@@ -31,6 +44,13 @@
     width: 100vw;
     background-color: #fdf3f0;
     padding-bottom: 2rem;
+    @include tablet {
+      width: 689px;
+      margin-top: 2rem;
+      border-radius: 25px;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &--textBox {
@@ -39,6 +59,9 @@
     align-items: center;
     height: 160px;
     justify-content: space-evenly;
+    @include tablet {
+      align-items: baseline;
+    }
   }
 
   &--contactBox {
@@ -47,12 +70,20 @@
     align-items: center;
     height: 130px;
     justify-content: space-evenly;
+    @include tablet {
+      align-items: baseline;
+      margin-top: 4rem;
+      height: 100px;
+    }
   }
 
   &--title {
     font-family: $jost;
     font-weight: $fontmed;
     color: $peach;
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &--strong {
@@ -64,6 +95,10 @@
     font-family: $jost;
     font-weight: $fontreg;
     width: 327px;
+    @include tablet {
+      width: 255px;
+      text-align: left;
+    }
   }
 
   &--contact {

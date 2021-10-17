@@ -12,6 +12,22 @@
   align-items: center;
   height: 764px;
   background-color: $peach;
+  @include tablet {
+    width: 689px;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 711px;
+  }
+
+  &--textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      align-items: baseline;
+      width: 573px;
+    }
+  }
 
   &--title {
     font-family: $jost;
@@ -20,6 +36,9 @@
     color: white;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    @include tablet {
+      font-size: 48px;
+    }
   }
 
   &--p {
@@ -30,6 +49,12 @@
     font-weight: $fontreg;
     font-size: 15px;
     color: white;
+    @include tablet {
+      width: 573px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   &--form {
@@ -38,6 +63,10 @@
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+    @include tablet {
+      width: 573px;
+      align-items: flex-end;
+    }
   }
 
   &--btn {
@@ -61,6 +90,9 @@
   padding-left: 1rem;
   margin-bottom: 2rem;
   color: white;
+  @include tablet {
+    width: 573px;
+  }
 }
 
 .invalid {
@@ -77,6 +109,9 @@
   padding-left: 1rem;
   margin-bottom: 2rem;
   color: white;
+  @include tablet {
+    width: 573px;
+  }
 }
 
 .invalid::placeholder {

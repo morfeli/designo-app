@@ -2,13 +2,19 @@ import React from "react";
 import "./LocationCard.scss";
 
 const LocationCard = (props) => {
-  const { image, title, where, address1, address2, phone, mail } = props;
+  const { image, imagetab, title, where, address1, address2, phone, mail } =
+    props;
   return (
     <li className="locationcard__container">
       <div className="locationcard__container--imgBox">
         <img
           className="locationcard__container--img"
           src={image}
+          alt="Location Map"
+        />
+        <img
+          className="locationcard__container--imgtab"
+          src={imagetab}
           alt="Location Map"
         />
       </div>
