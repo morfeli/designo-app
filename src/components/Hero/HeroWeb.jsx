@@ -1,4 +1,3 @@
-import React from "react";
 import "./HeroWeb.scss";
 
 const HeroWeb = () => {

@@ -4,21 +4,14 @@ import AppCard from "../components/Cards/AppCard";
 import WebCard from "../components/Cards/WebCard";
 import GetInTouch from "../components/Contact/GetInTouch";
 import GraphicDesignCards from "../components/Cards/GraphicDesignCards";
+import "./styles/GraphicDesign.scss";
 
 const GraphicDesign = () => {
   return (
     <Fragment>
       <HeroGraphic />
       <GraphicDesignCards />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          height: "600px",
-          justifyContent: "space-between",
-        }}
-        className="container"
-      >
+      <div className="container-graphic">
         <AppCard />
         <WebCard />
       </div>

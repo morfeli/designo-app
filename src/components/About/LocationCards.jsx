@@ -3,6 +3,7 @@ import canadaImg from "../../assets/shared/desktop/illustration-canada.svg";
 import australiaImg from "../../assets/shared/desktop/illustration-australia.svg";
 import ukImg from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import LocationCard from "./LocationCard";
+import "./LocationCards.scss";
 
 const DUMMY_LOCATIONS = [
   { id: "first", image: canadaImg, title: "Canada" },
@@ -12,17 +13,7 @@ const DUMMY_LOCATIONS = [
 
 const LocationCards = () => {
   return (
-    <ul
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        width: "375px",
-        height: "1188px",
-        justifyContent: "space-evenly",
-        margin: "0 auto",
-      }}
-    >
+    <ul className="locationcards__ul">
       {DUMMY_LOCATIONS.map((location) => (
         <LocationCard
           key={location.id}

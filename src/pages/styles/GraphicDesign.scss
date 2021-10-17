@@ -6,14 +6,12 @@
 
 @import "../../../styles/partials.scss";
 
-.webdesign__ul {
+.container-graphic {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 3068px;
-  margin-top: 5rem;
+  height: 600px;
+  justify-content: space-between;
   @include tablet {
-    height: unset;
+    height: 440px;
   }
 }

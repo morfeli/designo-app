@@ -18,11 +18,25 @@ $lightgrey: rgb(241, 243, 245);
 $jost: "Jost", sans-serif;
 $fontreg: 400;
 $fontmed: 500;
-// $smalltext: 16px;
-// $mediumtext: 20px;
-// $largetext: 40px;
-// $xltext: 48px;
-// $smallline: 26px;
-// $mediumline: 48px;
-// $smallspacing: 2px;
-// $mediumspacing: 5px;
+
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1440px;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

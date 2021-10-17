@@ -12,6 +12,8 @@ const Form = () => {
     message: true,
   });
 
+  const [touched, setTouched] = useState(false);
+
   const nameInputRef = useRef();
   const emailInputRef = useRef();
   const phoneInputRef = useRef();
@@ -46,6 +48,10 @@ const Form = () => {
     if (!formIsValid) {
       return;
     }
+  };
+
+  const onTouchHandler = () => {
+    setTouched(true);
   };
 
   let nameControlClasses = "control";

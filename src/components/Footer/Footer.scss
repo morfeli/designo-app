@@ -11,6 +11,9 @@
   height: 815px;
   background-color: rgba(0, 0, 0, 0.9);
   padding-top: 15rem;
+  @include tablet {
+    height: 423px;
+  }
 
   &--innerBox {
     width: 327px;
@@ -20,11 +23,20 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    @include tablet {
+      width: 690px;
+      height: 177px;
+      flex-direction: row;
+    }
   }
 
   &--img {
     width: 202px;
     height: 27px;
+    @include tablet {
+      // position: relative;
+      // bottom: 170px;
+    }
   }
 
   &--divider {

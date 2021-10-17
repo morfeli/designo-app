@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+@import "../../../styles/partials.scss";
+
 .graphicdesign__ul {
   display: flex;
   flex-direction: column;
@@ -11,4 +13,7 @@
   justify-content: space-evenly;
   height: 1514px;
   margin-top: 1rem;
+  @include tablet {
+    height: unset;
+  }
 }

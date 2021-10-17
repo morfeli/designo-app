@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import "../../../styles/partials.scss";
 
 .characteristics__ul {
   display: flex;
@@ -13,4 +14,9 @@
   height: 1396px;
   margin: 0 auto;
   margin-top: 3rem;
+
+  @include tablet {
+    width: 690px;
+    height: 670px;
+  }
 }

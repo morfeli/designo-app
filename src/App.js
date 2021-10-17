@@ -8,7 +8,6 @@ import LocationsPage from "./pages/LocationsPage";
 import AboutUs from "./pages/AboutUs";
 import ContactPage from "./pages/ContactPage";
 import { Switch, Route, Redirect } from "react-router-dom";
-
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -19,9 +18,9 @@ function App() {
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
       {/* <GraphicDesign /> */}
-      {/* <AboutUs /> */}
+      <AboutUs />
       {/* <LocationsPage /> */}
-      <ContactPage />
+      {/* <ContactPage /> */}
       <Footer />
     </div>
   );

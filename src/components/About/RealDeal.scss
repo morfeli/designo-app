@@ -12,10 +12,20 @@
   align-items: center;
   height: 885px;
   background-color: #fdf3f0;
+  @include tablet {
+    width: 689px;
+    margin: 0 auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
 
   &--imgBox {
     width: 375px;
     height: 320px;
+    @include tablet {
+      width: 689px;
+      height: 320px;
+    }
   }
 
   &--textBox {
@@ -29,8 +39,18 @@
   }
 
   &--img {
+    background-image: url("../../assets/about/mobile/image-real-deal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     width: 375px;
     height: 320px;
+    @include tablet {
+      background-image: url("../../assets/about/tablet/image-real-deal.jpg");
+      width: 689px;
+      height: 320px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
   }
 
   &--h1 {

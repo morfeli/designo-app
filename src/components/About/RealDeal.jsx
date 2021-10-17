@@ -1,16 +1,11 @@
 import React from "react";
 import "./RealDeal.scss";
-import realDealImg from "../../assets/about/desktop/image-real-deal.jpg";
 
 const RealDeal = () => {
   return (
     <section className="realdeal__container">
       <div className="realdeal__container--imgBox">
-        <img
-          className="realdeal__container--img"
-          src={realDealImg}
-          alt="World Talent"
-        />
+        <div className="realdeal__container--img"></div>
       </div>
       <div className="realdeal__container--textBox">
         <h1 className="realdeal__container--h1">The real deal</h1>

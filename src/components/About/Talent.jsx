@@ -7,7 +7,7 @@ const Talet = () => {
   return (
     <section className="talent__container">
       <div className="talent__container--imgBox">
-        <img className="talent__container--img" src={img} alt="World Talent" />
+        <div className="talent__container--img"></div>
       </div>
       <div className="talent__container--textBox">
         <h1 className="talent__container--h1">World-class talent</h1>

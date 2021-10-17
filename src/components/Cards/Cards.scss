@@ -20,18 +20,32 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: rb;
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/home/tablet/image-web-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 689px;
+    height: 200px;
+  }
   &--h1 {
     color: white;
     margin-bottom: 1.5rem;
     font-family: $jost;
     font-weight: $fontmed;
     font-size: 28px;
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &--p {
     color: white;
     letter-spacing: 5px;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 15px;
   }
 }
 
@@ -49,17 +63,32 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/home/tablet/image-app-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 689px;
+    height: 200px;
+  }
   &--h1 {
     color: white;
     margin-bottom: 1.5rem;
     font-family: $jost;
     font-weight: $fontmed;
     font-size: 28px;
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &--p {
     color: white;
     letter-spacing: 5px;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 15px;
   }
 }
 
@@ -77,12 +106,24 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/home/tablet/image-graphic-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 689px;
+    height: 200px;
+  }
   &--h1 {
     color: white;
     margin-bottom: 1.5rem;
     font-family: $jost;
     font-weight: $fontmed;
     font-size: 28px;
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &--p {

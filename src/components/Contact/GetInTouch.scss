@@ -18,6 +18,10 @@
   margin: 0 auto;
   position: relative;
   top: 150px;
+  @include tablet {
+    width: 690px;
+    top: 50px;
+  }
 
   &--h1 {
     font-family: $jost;
@@ -26,12 +30,20 @@
     color: white;
     text-align: center;
     width: 279px;
+    @include tablet {
+      font-size: 40px;
+    }
   }
   &--p {
     font-family: $jost;
     font-weight: $fontreg;
     color: white;
     text-align: center;
+    @include tablet {
+      font-size: 16px;
+      width: 445px;
+      line-height: 26px;
+    }
   }
 
   &--btn {

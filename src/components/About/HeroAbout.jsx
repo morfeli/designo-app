@@ -6,11 +6,7 @@ const HeroAbout = () => {
   return (
     <section className="aboutus__container">
       <div className="aboutus__container--imgBox">
-        <img
-          className="aboutus__container--img"
-          src={workStationImg}
-          alt="Work Station"
-        />
+        <div className="aboutus__container--img"></div>
       </div>
       <h1 className="aboutus__container--h1">About Us</h1>
       <p className="aboutus__container--p">

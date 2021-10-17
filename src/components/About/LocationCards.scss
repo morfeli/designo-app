@@ -6,14 +6,16 @@
 
 @import "../../../styles/partials.scss";
 
-.webdesign__ul {
+.locationcards__ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 375px;
+  height: 1188px;
   justify-content: space-evenly;
-  height: 3068px;
-  margin-top: 5rem;
+  margin: 0 auto;
+
   @include tablet {
-    height: unset;
+    // padding-bottom: 5rem;
   }
 }

@@ -11,6 +11,11 @@
   height: 843px;
   background-color: $peach;
   overflow: hidden;
+  @include tablet {
+    width: 689px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
 
   &--bitMap {
     display: flex;
@@ -21,6 +26,9 @@
     background-repeat: no-repeat;
     background-size: 40rem;
     background-position: 0% 30%;
+    @include tablet {
+      background-position: 165% 30%;
+    }
   }
 
   &--h1 {
@@ -31,6 +39,12 @@
     color: $white;
     line-height: 36px;
     text-align: center;
+    @include tablet {
+      font-size: 48px;
+      width: 573px;
+      line-height: 48px;
+      margin-top: 2rem;
+    }
   }
 
   &--p {
@@ -41,6 +55,11 @@
     text-align: center;
     color: $white;
     width: 327px;
+    @include tablet {
+      width: 445px;
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 
   &--btn {
