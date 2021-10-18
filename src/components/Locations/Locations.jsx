@@ -10,7 +10,7 @@ import "./Locations.scss";
 
 const DUMMY_MAP = [
   {
-    id: "0",
+    id: "first",
     image: canadaMap,
     imagetab: canadaMapTab,
     title: "Canada",
@@ -21,7 +21,7 @@ const DUMMY_MAP = [
     mail: "contact@designo.co",
   },
   {
-    id: "1",
+    id: "second",
     image: australiaMap,
     imagetab: australiaMapTab,
     title: "Australia",
@@ -32,7 +32,7 @@ const DUMMY_MAP = [
     mail: "contact@designo.au",
   },
   {
-    id: "3",
+    id: "third",
     image: ukMap,
     imagetab: ukMapTab,
     title: "United Kingdom",
@@ -49,6 +49,7 @@ const Locations = () => {
     <ul className="locations__ul">
       {DUMMY_MAP.map((location) => (
         <LocationCard
+          id={location.id}
           key={location.id}
           image={location.image}
           imagetab={location.imagetab}

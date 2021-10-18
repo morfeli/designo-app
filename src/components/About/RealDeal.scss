@@ -18,6 +18,11 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
+  @include desktop {
+    width: 1111px;
+    height: 640px;
+    flex-direction: row-reverse;
+  }
 
   &--imgBox {
     width: 375px;
@@ -25,6 +30,10 @@
     @include tablet {
       width: 689px;
       height: 320px;
+    }
+    @include desktop {
+      width: 476px;
+      height: 714px;
     }
   }
 
@@ -36,6 +45,12 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 5rem;
+    @include desktop {
+      width: 445px;
+      height: 332px;
+      align-items: baseline;
+      margin: 0 auto;
+    }
   }
 
   &--img {
@@ -51,12 +66,20 @@
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
     }
+    @include desktop {
+      background-image: url("../../assets/about/desktop/image-real-deal.jpg");
+      width: 476px;
+      height: 714px;
+    }
   }
 
   &--h1 {
     font-family: $jost;
     font-size: 32px;
     color: $peach;
+    @include desktop {
+      font-size: 40px;
+    }
   }
 
   &--p {
@@ -70,6 +93,12 @@
     @include tablet {
       font-size: 16px;
       width: 573px;
+    }
+    @include desktop {
+      width: 445px;
+      height: 260px;
+      text-align: left;
+      margin-top: 1.5rem;
     }
   }
 }

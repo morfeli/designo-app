@@ -18,9 +18,9 @@ function App() {
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
       {/* <GraphicDesign /> */}
-      <AboutUs />
+      {/* <AboutUs /> */}
       {/* <LocationsPage /> */}
-      {/* <ContactPage /> */}
+      <ContactPage />
       <Footer />
     </div>
   );

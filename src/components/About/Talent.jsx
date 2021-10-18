@@ -1,8 +1,6 @@
 import React from "react";
 import "./Talent.scss";
 
-import img from "../../assets/about/desktop/image-world-class-talent.jpg";
-
 const Talet = () => {
   return (
     <section className="talent__container">

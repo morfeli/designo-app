@@ -18,6 +18,11 @@
     border-radius: 25px;
     height: 711px;
   }
+  @include desktop {
+    width: 1111px;
+    height: 480px;
+    flex-direction: row;
+  }
 
   &--textBox {
     display: flex;
@@ -26,6 +31,13 @@
     @include tablet {
       align-items: baseline;
       width: 573px;
+    }
+    @include desktop {
+      width: 540px;
+      height: 184px;
+      margin: 0 auto;
+      position: relative;
+      bottom: 20px;
     }
   }
 
@@ -38,6 +50,9 @@
     margin-bottom: 2rem;
     @include tablet {
       font-size: 48px;
+    }
+    @include desktop {
+      margin-top: unset;
     }
   }
 
@@ -55,6 +70,9 @@
       font-size: 16px;
       line-height: 26px;
     }
+    @include desktop {
+      width: 445px;
+    }
   }
 
   &--form {
@@ -66,6 +84,11 @@
     @include tablet {
       width: 573px;
       align-items: flex-end;
+    }
+    @include desktop {
+      width: 380px;
+      height: 371px;
+      margin: 0 auto;
     }
   }
 
@@ -92,6 +115,9 @@
   color: white;
   @include tablet {
     width: 573px;
+  }
+  @include desktop {
+    width: 380px;
   }
 }
 

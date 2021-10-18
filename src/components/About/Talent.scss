@@ -19,6 +19,11 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
+  @include desktop {
+    width: 1111px;
+    height: 640px;
+    flex-direction: row;
+  }
 
   &--imgBox {
     width: 375px;
@@ -26,6 +31,10 @@
     @include tablet {
       width: 689px;
       height: 320px;
+    }
+    @include desktop {
+      width: 476px;
+      height: 713px;
     }
   }
 
@@ -40,6 +49,11 @@
     @include tablet {
       margin-top: unset;
     }
+    @include desktop {
+      margin: 0 auto;
+      align-items: baseline;
+      margin-right: 12rem;
+    }
   }
 
   &--img {
@@ -53,6 +67,13 @@
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
     }
+    @include desktop {
+      width: 476px;
+      height: 713px;
+      background-image: url("../../assets/about/desktop/image-world-class-talent.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   &--h1 {
@@ -60,6 +81,9 @@
     font-weight: $fontmed;
     font-size: 32px;
     color: $peach;
+    @include desktop {
+      font-size: 40px;
+    }
   }
 
   &--p {
@@ -72,6 +96,10 @@
     @include tablet {
       width: 527px;
       font-size: 16px;
+    }
+    @include desktop {
+      width: 445px;
+      text-align: left;
     }
   }
 }

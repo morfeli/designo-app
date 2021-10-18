@@ -12,8 +12,13 @@
   align-items: center;
   justify-content: space-evenly;
   height: 600px;
-
   list-style: none;
+  @include desktop {
+    width: 1110px;
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: space-between;
+  }
 
   &--img {
     width: 100vw;
@@ -21,6 +26,13 @@
     object-fit: fill;
     @include tablet {
       display: none;
+    }
+    @include desktop {
+      display: block;
+      width: 350px;
+      height: 326px;
+      object-fit: cover;
+      border-radius: 25px;
     }
   }
 
@@ -31,6 +43,9 @@
       width: 689px;
       height: 326px;
       border-radius: 25px;
+    }
+    @include desktop {
+      display: none;
     }
   }
 
@@ -50,6 +65,10 @@
       border-radius: 25px;
       flex-direction: row;
       align-items: center;
+    }
+    @include desktop {
+      width: 730px;
+      height: 326px;
     }
   }
 
@@ -105,5 +124,12 @@
     font-family: $jost;
     font-weight: $fontmed;
     font-size: 18px;
+  }
+}
+
+#second.locationcard__container {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
   }
 }
