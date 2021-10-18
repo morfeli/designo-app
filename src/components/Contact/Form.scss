@@ -98,6 +98,11 @@
     border-radius: 10px;
     border: none;
     box-shadow: 10px 5px 5px black;
+    cursor: pointer;
+    @include desktop {
+      position: relative;
+      top: 30px;
+    }
   }
 }
 
@@ -137,6 +142,9 @@
   color: white;
   @include tablet {
     width: 573px;
+  }
+  @include desktop {
+    width: 380px;
   }
 }
 

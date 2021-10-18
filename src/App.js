@@ -14,13 +14,13 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <HomePage /> */}
+      <HomePage />
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
       {/* <GraphicDesign /> */}
       {/* <AboutUs /> */}
       {/* <LocationsPage /> */}
-      <ContactPage />
+      {/* <ContactPage /> */}
       <Footer />
     </div>
   );
