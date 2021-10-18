@@ -21,9 +21,20 @@
     margin-top: 5rem;
     height: 640px;
   }
+  @include desktop {
+    width: 1111px;
+    height: 480px;
+    flex-direction: row-reverse;
+  }
 
   &--imgBox {
     margin: 0 auto;
+  }
+
+  &--textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &--img {
@@ -37,6 +48,12 @@
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
     }
+    @include desktop {
+      background-image: url("../../assets/about/desktop/image-about-hero.jpg");
+      width: 720px;
+      height: 480px;
+      background-position: center;
+    }
   }
 
   &--h1 {
@@ -49,6 +66,9 @@
     text-align: center;
     @include tablet {
       font-size: 48px;
+    }
+    @include desktop {
+      padding-top: unset;
     }
   }
 
@@ -64,6 +84,9 @@
     @include tablet {
       width: 573px;
       font-size: 16px;
+    }
+    @include desktop {
+      width: 458px;
     }
   }
 }
