@@ -38,13 +38,23 @@
   }
 
   &--textBox {
-    height: 385px;
-    width: 327px;
+    height: 100vh;
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
+    @include tablet {
+      width: 736px;
+      background-position: 75% 130%;
+      margin-top: unset;
+    }
+
     @include desktop {
       width: 445px;
       height: 332px;

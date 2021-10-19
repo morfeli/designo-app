@@ -18,7 +18,15 @@
   margin: 0 auto;
   position: relative;
   top: 150px;
+  background-image: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 40%;
+  background-size: 900px;
+
   @include tablet {
+    background-image: url("../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-position: 20% 47%;
+    background-size: 930px;
     width: 690px;
     top: 50px;
   }
@@ -27,6 +35,7 @@
     height: 292px;
     flex-direction: row;
     justify-content: space-around;
+    background-position: 135% 47%;
   }
 
   &--textBox {

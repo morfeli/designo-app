@@ -9,6 +9,7 @@
 .web__container {
   width: 100vw;
   height: 320px;
+  display: flex;
   background-color: $peach;
   // overflow: hidden;
   @include tablet {
@@ -31,6 +32,14 @@
     background-size: 18rem;
     background-position-x: 80%;
     height: 100vh;
+    @include tablet {
+      height: unset;
+      background-image: url("../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+      background-position: 20% 47%;
+      background-size: 930px;
+      width: 690px;
+      // top: 50px;
+    }
   }
 
   &--h1 {

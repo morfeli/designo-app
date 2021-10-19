@@ -25,6 +25,7 @@ const HeroHome = () => {
           />
         </div>
       </div>
+      <div className="desktop-bitmap"></div>
     </section>
   );
 };

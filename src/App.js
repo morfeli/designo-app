@@ -14,11 +14,11 @@ function App() {
   return (
     <div>
       <Header />
-      <HomePage />
+      {/* <HomePage /> */}
       {/* <WebDesign /> */}
       {/* <AppDesign /> */}
       {/* <GraphicDesign /> */}
-      {/* <AboutUs /> */}
+      <AboutUs />
       {/* <LocationsPage /> */}
       {/* <ContactPage /> */}
       <Footer />

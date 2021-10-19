@@ -39,14 +39,20 @@
   }
 
   &--textBox {
-    height: 385px;
-    width: 327px;
+    height: 100vh;
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
     @include tablet {
+      width: 736px;
+      background-position: 75% 130%;
       margin-top: unset;
     }
     @include desktop {
@@ -87,15 +93,16 @@
   }
 
   &--p {
-    width: 327px;
+    width: 340px;
     text-align: center;
     line-height: 25px;
     margin-bottom: 1rem;
     font-family: $jost;
     font-weight: $fontreg;
     @include tablet {
-      width: 527px;
+      width: 550px;
       font-size: 16px;
+      line-height: 26px;
     }
     @include desktop {
       width: 445px;

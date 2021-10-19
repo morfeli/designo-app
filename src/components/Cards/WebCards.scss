@@ -62,6 +62,9 @@
     font-family: $jost;
     font-weight: $fontmed;
     text-align: center;
+    @include tablet {
+      font-size: 20px;
+    }
   }
   &--p {
     font-family: $jost;

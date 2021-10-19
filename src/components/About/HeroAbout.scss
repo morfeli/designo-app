@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include tablet {
     width: 689px;
     border-radius: 25px;
@@ -20,6 +21,7 @@
     margin-bottom: 7rem;
     margin-top: 5rem;
     height: 640px;
+    align-items: unset;
   }
   @include desktop {
     width: 1111px;
@@ -35,6 +37,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -1300%;
+    background-size: 292px 292px;
+    @include tablet {
+      background-size: 640px 640px;
+      background-position: -300% 135%;
+      height: 100vh;
+    }
+
     @include desktop {
       width: 540px;
       height: 210px;
