@@ -15,11 +15,10 @@
   background-image: url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
   background-repeat: no-repeat;
   background-position: center top;
-
   @include tablet {
-    margin-top: 3.5rem;
     width: 689px;
     margin: 0 auto;
+    margin-top: 3rem;
     border-radius: 25px;
     height: 711px;
     background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
@@ -99,6 +98,9 @@
       width: 380px;
       height: 371px;
       margin: 0 auto;
+      position: relative;
+      right: 25px;
+      top: 12px;
     }
   }
 
@@ -179,4 +181,8 @@
 .form__container--btn:active {
   background-color: #ffad9b;
   color: white;
+}
+
+.valid-message {
+  display: none;
 }

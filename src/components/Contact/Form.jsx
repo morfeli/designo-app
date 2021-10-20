@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./styles/Form.scss";
 
 const isEmpty = (value) => value.trim() === "";
@@ -12,7 +12,10 @@ const Form = () => {
     message: true,
   });
 
-  const [touched, setTouched] = useState(false);
+  const [touchedName, setTouchedName] = useState("");
+  const [touchedEmail, setTouchedEmail] = useState("");
+  const [touchedPhone, setTouchedPhone] = useState("");
+  const [touchedMessage, setTouchedMessage] = useState("");
 
   const nameInputRef = useRef();
   const emailInputRef = useRef();
@@ -50,29 +53,60 @@ const Form = () => {
     }
   };
 
-  const onTouchHandler = () => {
-    setTouched(true);
+  const onTouchNameHandler = (e) => {
+    setTouchedName(e.target.value);
   };
+  const onTouchEmailHandler = (e) => {
+    setTouchedEmail(e.target.value);
+  };
+  const onTouchPhoneHandler = (e) => {
+    setTouchedPhone(e.target.value);
+  };
+  const onTouchMessageHandler = (e) => {
+    setTouchedMessage(e.target.value);
+  };
+
+  let invalidNameControl = "invalid-message";
+  let invalidEmailControl = "invalid-message";
+  let invalidPhoneControl = "invalid-message";
+  let invalidMessageControl = "invalid-message";
 
   let nameControlClasses = "control";
   if (!formInputValidity.name) {
     nameControlClasses = "invalid";
+  }
+  if (!formInputValidity.name && touchedName) {
+    nameControlClasses = "control";
+    invalidNameControl = "valid-message";
   }
 
   let emailControlClasses = "control";
   if (!formInputValidity.email) {
     emailControlClasses = "invalid";
   }
+  if (!formInputValidity.email && touchedEmail) {
+    emailControlClasses = "control";
+    invalidEmailControl = "valid-message";
+  }
 
   let phoneControlClasses = "control";
   if (!formInputValidity.phone) {
     phoneControlClasses = "invalid";
+  }
+  if (!formInputValidity.phone && touchedPhone) {
+    phoneControlClasses = "control";
+    invalidPhoneControl = "valid-message";
   }
 
   let messageControlClasses = "control";
   if (!formInputValidity.message) {
     messageControlClasses = "invalid";
   }
+  if (!formInputValidity.message && touchedMessage) {
+    messageControlClasses = "control";
+    invalidMessageControl = "valid-message";
+  }
+
   return (
     <section className="form__container" onSubmit={confirmHandler}>
       <div className="form__container--textBox">
@@ -94,9 +128,10 @@ const Form = () => {
             id="name"
             placeholder="Name"
             ref={nameInputRef}
+            onChange={onTouchNameHandler}
           />
           {!formInputValidity.name && (
-            <p className="invalid-message">Please enter a valid name!</p>
+            <p className={invalidNameControl}>Please enter a valid name!</p>
           )}
         </div>
         <div>
@@ -107,9 +142,10 @@ const Form = () => {
             id="email"
             placeholder="Email Address"
             ref={emailInputRef}
+            onChange={onTouchEmailHandler}
           />
           {!formInputValidity.email && (
-            <p className="invalid-message">
+            <p className={invalidEmailControl}>
               Please enter a valid email address!
             </p>
           )}
@@ -122,9 +158,10 @@ const Form = () => {
             id="phone"
             placeholder="Phone"
             ref={phoneInputRef}
+            onChange={onTouchPhoneHandler}
           />
           {!formInputValidity.phone && (
-            <p className="invalid-message">
+            <p className={invalidPhoneControl}>
               Please enter a valid phone number!
             </p>
           )}
@@ -137,9 +174,12 @@ const Form = () => {
             id="message"
             placeholder="Your Message"
             ref={messageInputRef}
+            onChange={onTouchMessageHandler}
           />
           {!formInputValidity.message && (
-            <p className="invalid-message">Please enter a valid message!</p>
+            <p className={invalidMessageControl}>
+              Please enter a valid message!
+            </p>
           )}
         </div>
 
@@ -152,3 +192,8 @@ const Form = () => {
 };
 
 export default Form;
+
+// {
+//   (!formInputValidity.name && <h1>hello</h1>) ||
+//     (!formInputValidity.name && touched(<p></p>));
+// }

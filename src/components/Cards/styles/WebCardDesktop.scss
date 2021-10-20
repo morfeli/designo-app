@@ -58,4 +58,10 @@
     font-size: 15px;
     text-transform: uppercase;
   }
+  &--box {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    justify-content: space-evenly;
+  }
 }

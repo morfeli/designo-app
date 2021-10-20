@@ -46,13 +46,12 @@
     background-size: 292px 292px;
     @include tablet {
       background-size: 640px 640px;
-      background-position: -300% 135%;
-      height: 100vh;
+      background-position: -300% 100%;
     }
 
     @include desktop {
       width: 540px;
-      height: 100vh;
+      height: 715px;
       align-items: baseline;
       text-align: left;
       background-position: -10% 50%;
