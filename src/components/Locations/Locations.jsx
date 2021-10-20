@@ -6,7 +6,7 @@ import canadaMapTab from "../../assets/locations/tablet/image-map-canada.png";
 import australiaMapTab from "../../assets/locations/tablet/image-map-australia.png";
 import ukMapTab from "../../assets/locations/tablet/image-map-uk.png";
 import LocationCard from "./LocationCard";
-import "./Locations.scss";
+import "./styles/Locations.scss";
 
 const DUMMY_MAP = [
   {

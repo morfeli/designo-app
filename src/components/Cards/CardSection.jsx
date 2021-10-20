@@ -2,7 +2,7 @@ import React from "react";
 import AppCard from "./AppCard";
 import WebCard from "./WebCard";
 import GraphicCard from "./GraphicCard";
-import "./CardSection.scss";
+import "./styles/CardSection.scss";
 
 const CardSection = () => {
   return (

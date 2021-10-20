@@ -6,7 +6,7 @@ import photonImg from "../../assets/web-design/desktop/image-photon.jpg";
 import builderImg from "../../assets/web-design/desktop/image-builder.jpg";
 import blogrImg from "../../assets/web-design/desktop/image-blogr.jpg";
 import campImg from "../../assets/web-design/desktop/image-camp.jpg";
-import "./WebDesignCards.scss";
+import "./styles/WebDesignCards.scss";
 
 const DUMMY_WEBCARDS = [
   {

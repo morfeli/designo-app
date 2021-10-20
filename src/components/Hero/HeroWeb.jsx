@@ -1,4 +1,4 @@
-import "./HeroWeb.scss";
+import "./styles/HeroWeb.scss";
 
 const HeroWeb = () => {
   return (

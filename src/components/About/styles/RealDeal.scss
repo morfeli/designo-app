@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../../styles/partials.scss";
+
+.realdeal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 885px;
+  background-color: #fdf3f0;
+  @include tablet {
+    width: 689px;
+    height: 736px;
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+  @include desktop {
+    width: 1111px;
+    height: 640px;
+    flex-direction: row-reverse;
+    align-items: unset;
+  }
+
+  &--imgBox {
+    width: 375px;
+    height: 320px;
+    @include tablet {
+      width: 689px;
+      height: 320px;
+    }
+    @include desktop {
+      width: 476px;
+      height: 714px;
+    }
+  }
+
+  &--textBox {
+    height: 100vh;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
+    @include tablet {
+      width: 736px;
+      background-position: 75% 130%;
+      margin-top: unset;
+    }
+
+    @include desktop {
+      margin: 0 auto;
+      justify-content: center;
+      height: 640px;
+      background-position: -260% 100%;
+    }
+  }
+
+  &--img {
+    background-image: url("../../../assets/about/mobile/image-real-deal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 320px;
+    @include tablet {
+      background-image: url("../../../assets/about/tablet/image-real-deal.jpg");
+      width: 689px;
+      height: 320px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    @include desktop {
+      background-image: url("../../../assets/about/desktop/image-real-deal.jpg");
+      width: 476px;
+      height: 640px;
+      border-top-left-radius: unset;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+  &--h1 {
+    font-family: $jost;
+    font-size: 32px;
+    color: $peach;
+    @include desktop {
+      font-size: 40px;
+
+      font-size: 40px;
+      position: relative;
+      right: 110px;
+    }
+  }
+
+  &--p {
+    font-family: $jost;
+    font-weight: $fontreg;
+    font-size: 15px;
+    width: 327px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 1rem;
+    @include tablet {
+      font-size: 16px;
+      width: 573px;
+    }
+    @include desktop {
+      width: 445px;
+      text-align: left;
+      margin-top: 1.5rem;
+    }
+  }
+}

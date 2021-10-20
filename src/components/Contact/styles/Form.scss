@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../../styles/partials.scss";
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 764px;
+  background-color: $peach;
+  background-image: url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @include tablet {
+    margin-top: 3.5rem;
+    width: 689px;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 711px;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-size: 640px 640px;
+    background-position: -200% -100%;
+  }
+  @include desktop {
+    width: 1111px;
+    height: 480px;
+    flex-direction: row;
+    background-position: 0% 100%;
+  }
+
+  &--textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      align-items: baseline;
+      width: 573px;
+    }
+    @include desktop {
+      width: 540px;
+      height: 184px;
+      margin: 0 auto;
+      position: relative;
+      bottom: 20px;
+      left: 40px;
+    }
+  }
+
+  &--title {
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 32px;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      margin-top: unset;
+    }
+  }
+
+  &--p {
+    width: 327px;
+    text-align: center;
+    line-height: 25px;
+    font-family: $jost;
+    font-weight: $fontreg;
+    font-size: 15px;
+    color: white;
+    @include tablet {
+      width: 573px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @include desktop {
+      width: 445px;
+    }
+  }
+
+  &--form {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    @include tablet {
+      width: 573px;
+      align-items: flex-end;
+    }
+    @include desktop {
+      width: 380px;
+      height: 371px;
+      margin: 0 auto;
+    }
+  }
+
+  &--btn {
+    width: 152px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+    cursor: pointer;
+    font-family: $jost;
+    font-weight: $fontmed;
+
+    @include desktop {
+      position: relative;
+      top: 30px;
+    }
+  }
+}
+
+.control {
+  width: 327px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: solid white 2px;
+  font-family: $jost;
+  font-weight: $fontmed;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  @include tablet {
+    width: 573px;
+  }
+  @include desktop {
+    width: 380px;
+  }
+}
+
+.invalid {
+  border-bottom: solid red 2px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 327px;
+  outline: none;
+  font-family: $jost;
+  font-weight: $fontmed;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  position: relative;
+  @include tablet {
+    width: 573px;
+  }
+  @include desktop {
+    width: 380px;
+  }
+}
+
+.invalid::placeholder {
+  color: red;
+  opacity: 0.5;
+}
+
+.invalid-message {
+  font-family: $jost;
+  font-weight: $fontreg;
+  position: relative;
+  bottom: 15px;
+  text-align: center;
+  color: maroon;
+}
+
+.form__container--btn:active {
+  background-color: #ffad9b;
+  color: white;
+}

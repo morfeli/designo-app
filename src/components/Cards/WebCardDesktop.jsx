@@ -1,5 +1,5 @@
 import React from "react";
-import "./WebCardDesktop.scss";
+import "./styles/WebCardDesktop.scss";
 import { Link } from "react-router-dom";
 
 const WebCardDesktop = () => {

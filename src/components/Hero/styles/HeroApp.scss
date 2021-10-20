@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../../styles/partials.scss";
+
+.app__container {
+  width: 100vw;
+  height: 320px;
+  background-color: $peach;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    width: 689px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+  }
+  @include desktop {
+    width: 1111px;
+    height: 252px;
+  }
+
+  &--bitMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 18rem;
+    background-position-x: 80%;
+    height: 100vh;
+    @include tablet {
+      background-image: url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+      background-position: 20% 47%;
+      background-size: 930px;
+      width: 690px;
+    }
+    @include desktop {
+      width: 1111px;
+      background-position: 135% 50%;
+    }
+  }
+
+  &--h1 {
+    padding-top: 6rem;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 32px;
+    color: $white;
+    line-height: 36px;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      padding-top: 4.5rem;
+    }
+  }
+
+  &--p {
+    margin-top: 2rem;
+    font-family: $jost;
+    font-weight: $fontreg;
+    font-size: 15px;
+    text-align: center;
+    color: $white;
+    width: 327px;
+    @include tablet {
+      font-size: 16px;
+      width: 385px;
+    }
+  }
+}

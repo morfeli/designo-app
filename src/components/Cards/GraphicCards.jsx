@@ -1,4 +1,4 @@
-import "./GraphicCards.scss";
+import "./styles/GraphicCards.scss";
 
 const GraphicCards = (props) => {
   return (

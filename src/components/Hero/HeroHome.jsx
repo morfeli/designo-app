@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroHome.scss";
+import "./styles/HeroHome.scss";
 import HeroImg from "../../assets/home/desktop/image-hero-phone.png";
 
 const HeroHome = () => {

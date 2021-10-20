@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../../styles/partials.scss";
+
+.location__li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  height: 364px;
+  justify-content: space-around;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  @include tablet {
+    margin: unset;
+    height: 500px;
+  }
+
+  &--imgBox {
+    background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    height: 202px;
+    width: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--h3 {
+    font-family: $jost;
+    font-weight: $fontmed;
+    letter-spacing: 5px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &--btn {
+    width: 152px;
+    height: 56px;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+    background-color: $peach;
+    font-family: $jost;
+    font-weight: $fontmed;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+#first .location__li--img {
+  width: 182px;
+  height: 143px;
+  object-fit: cover;
+}
+
+#second .location__li--img {
+  width: 182px;
+  height: 93px;
+  object-fit: cover;
+}
+
+#third .location__li--img {
+  width: 181px;
+  object-fit: cover;
+  height: 108px;
+}
+
+.location__li--btn:active {
+  background-color: #ffad9b;
+  color: white;
+}

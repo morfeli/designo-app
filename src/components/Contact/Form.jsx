@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./Form.scss";
+import "./styles/Form.scss";
 
 const isEmpty = (value) => value.trim() === "";
 const isTenChars = (value) => value.trim().length === 10;

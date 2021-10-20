@@ -3,7 +3,7 @@ import CharacterCards from "./CharacterCards";
 import passionateImg from "../../assets/home/desktop/illustration-passionate.svg";
 import resourcefulImg from "../../assets/home/desktop/illustration-resourceful.svg";
 import friendlyImg from "../../assets/home/desktop/illustration-friendly.svg";
-import "./Characteristics.scss";
+import "./styles/Characteristics.scss";
 
 const DUMMY_ARRAY = [
   {

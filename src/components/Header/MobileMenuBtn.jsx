@@ -1,5 +1,5 @@
 import React from "react";
-import "./MobileMenuBtn.scss";
+import "./styles/MobileMenuBtn.scss";
 
 const MobileMenuBtn = () => {
   return (

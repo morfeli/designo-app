@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Footer.scss";
+import "./styles/Footer.scss";
 import logo from "../../assets/shared/desktop/logo-light.png";
-import facebook from "../../assets/shared/desktop/icon-facebook.svg";
-import youtube from "../../assets/shared/desktop/icon-youtube.svg";
-import twitter from "../../assets/shared/desktop/icon-twitter.svg";
-import pintrest from "../../assets/shared/desktop/icon-pinterest.svg";
-import instagram from "../../assets/shared/desktop/icon-instagram.svg";
+import FacebookSVG from "./FacebookSVG";
+import YoutubeSVG from "./YoutubeSVG";
+import TwitterSVG from "./TwitterSVG";
+import PintrestSVG from "./PintrestSVG";
+import InstagramSVG from "./InstagramSVG";
 
 const Footer = () => {
   return (
@@ -45,11 +45,11 @@ const Footer = () => {
             <p className="footer__container--p">M : contact@designo.co</p>
           </div>
           <div className="footer__container--socialBox">
-            <img src={facebook} alt="facebook" />
-            <img src={youtube} alt="youtube" />
-            <img src={twitter} alt="twitter" />
-            <img src={pintrest} alt="pintrest" />
-            <img src={instagram} alt="instagram" />
+            <FacebookSVG />
+            <YoutubeSVG />
+            <TwitterSVG />
+            <PintrestSVG />
+            <InstagramSVG />
           </div>
         </div>
       </div>

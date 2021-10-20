@@ -1,5 +1,5 @@
-import "./CharacterCard.scss";
 import React from "react";
+import "./styles/CharacterCard.scss";
 
 const CharacterCards = (props) => {
   return (

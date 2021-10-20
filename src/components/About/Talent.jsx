@@ -1,5 +1,5 @@
 import React from "react";
-import "./Talent.scss";
+import "./styles/Talent.scss";
 
 const Talet = () => {
   return (

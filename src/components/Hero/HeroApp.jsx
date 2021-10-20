@@ -1,4 +1,4 @@
-import "./HeroApp.scss";
+import "./styles/HeroApp.scss";
 
 const HeroApp = () => {
   return (

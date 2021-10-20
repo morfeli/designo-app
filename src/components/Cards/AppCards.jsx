@@ -1,4 +1,4 @@
-import "./AppCards.scss";
+import "./styles/AppCards.scss";
 
 const AppCards = (props) => {
   return (

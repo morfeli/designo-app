@@ -1,7 +1,7 @@
 import React from "react";
 import MobileMenuBtn from "./MobileMenuBtn";
 import { NavLink, Link } from "react-router-dom";
-import "./Header.scss";
+import "./styles/Header.scss";
 import Logo from "../../assets/shared/desktop/logo-dark.png";
 
 const Header = () => {

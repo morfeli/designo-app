@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "../../../../styles/partials.scss";
+
+.characteristics__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 327px;
+  height: 1396px;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  @include tablet {
+    width: 690px;
+    height: 670px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    width: 1110px;
+  }
+}

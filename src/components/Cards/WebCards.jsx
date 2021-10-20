@@ -1,4 +1,4 @@
-import "./WebCards.scss";
+import "./styles/WebCards.scss";
 
 const WebCards = (props) => {
   return (

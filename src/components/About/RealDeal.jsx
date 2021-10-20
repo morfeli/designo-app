@@ -1,5 +1,5 @@
 import React from "react";
-import "./RealDeal.scss";
+import "./styles/RealDeal.scss";
 
 const RealDeal = () => {
   return (

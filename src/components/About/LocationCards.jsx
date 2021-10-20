@@ -3,7 +3,7 @@ import canadaImg from "../../assets/shared/desktop/illustration-canada.svg";
 import australiaImg from "../../assets/shared/desktop/illustration-australia.svg";
 import ukImg from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import LocationCard from "./LocationCard";
-import "./LocationCards.scss";
+import "./styles/LocationCards.scss";
 
 const DUMMY_LOCATIONS = [
   { id: "first", image: canadaImg, title: "Canada" },

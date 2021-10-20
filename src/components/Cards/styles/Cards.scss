@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../../../../styles/partials.scss";
+
+.webdesign__container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/home/mobile/image-web-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/home/tablet/image-web-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 689px;
+    height: 200px;
+    @include desktop {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../../assets/home/desktop/image-web-design-large.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 541px;
+      height: 640px;
+    }
+  }
+  &--h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: $jost;
+    font-weight: $fontmed;
+    text-transform: uppercase;
+    font-size: 28px;
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+
+  &--p {
+    color: white;
+    letter-spacing: 5px;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.appdesign__container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/home/mobile/image-app-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/home/tablet/image-app-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 689px;
+    height: 200px;
+  }
+
+  @include desktop {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/home/desktop/image-app-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 541px;
+    height: 308px;
+  }
+
+  &--h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 28px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+
+  &--p {
+    color: white;
+    letter-spacing: 5px;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.graphicdesign__container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/home/mobile/image-graphic-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/home/tablet/image-graphic-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 689px;
+    height: 200px;
+  }
+
+  @include desktop {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/home/desktop/image-graphic-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 541px;
+    height: 308px;
+  }
+  &--h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 28px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+
+  &--p {
+    color: white;
+    font-family: $jost;
+    font-weight: $fontmed;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
+
+.appdesign__container:hover {
+  background: linear-gradient(rgb(255, 173, 155), rgb(255, 173, 155)),
+    url("../../../assets/home/mobile/image-app-design.jpg");
+}

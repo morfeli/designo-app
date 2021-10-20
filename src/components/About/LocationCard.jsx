@@ -1,5 +1,5 @@
 import React from "react";
-import "./LocationCard.scss";
+import "./styles/LocationCard.scss";
 
 const LocationCard = (props) => {
   return (
