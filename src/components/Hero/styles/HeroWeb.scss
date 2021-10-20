@@ -10,9 +10,13 @@
   width: 100vw;
   height: 320px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $peach;
   // overflow: hidden;
   @include tablet {
+    align-items: unset;
+    flex-direction: unset;
     width: 689px;
     border-radius: 25px;
     margin: 0 auto;

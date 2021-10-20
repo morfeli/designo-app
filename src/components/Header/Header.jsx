@@ -18,13 +18,28 @@ const Header = () => {
       <nav className="header__container--nav">
         <ul className="header__container--ul">
           <li className="header__container--li">
-            <NavLink to="/about">Our Company</NavLink>
+            <NavLink
+              style={{ textDecoration: "none", color: "#333136" }}
+              to="/about"
+            >
+              Our Company
+            </NavLink>
           </li>
           <li className="header__container--li">
-            <NavLink to="/locations">Locations</NavLink>
+            <NavLink
+              style={{ textDecoration: "none", color: "#333136" }}
+              to="/locations"
+            >
+              Locations
+            </NavLink>
           </li>
           <li className="header__container--li">
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink
+              style={{ textDecoration: "none", color: "#333136" }}
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>

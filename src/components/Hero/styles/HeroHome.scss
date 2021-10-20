@@ -11,7 +11,12 @@
   height: 843px;
   background-color: $peach;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include tablet {
+    align-items: unset;
+    // flex-direction: unset;
     width: 689px;
     margin: 0 auto;
     margin-top: 3.5rem;
@@ -37,13 +42,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
     background-repeat: no-repeat;
     background-size: 40rem;
+    background-position: center left;
     background-position: 0% 30%;
     @include tablet {
-      background-position: 165% 30%;
+      background-position: 300% 25%;
     }
     @include desktop {
       flex-direction: row;

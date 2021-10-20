@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+@import "../../../../styles/partials.scss";
+
 .header__container {
   width: 100vw;
   background-color: white;
@@ -11,6 +13,16 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1rem;
+
+  @include tablet {
+    width: 689px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  @include desktop {
+    width: 1111px;
+  }
 
   &--logo {
     width: 207px;
@@ -21,5 +33,50 @@
 
   &--nav {
     display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &--ul {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &--li {
+    display: inline-block;
+    list-style: none;
+    font-family: $jost;
+    font-weight: $fontreg;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333136;
+  }
+  &--li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+  }
+  &--li:hover::after {
+    width: 100%;
   }
 }
+
+// .header__container--nav {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .header__container--ul {
+//   width: 375px;
+//   height: 235px;
+//   display: flex;
+//   flex-direction: column;
+// }

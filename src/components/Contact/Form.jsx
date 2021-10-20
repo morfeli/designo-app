@@ -192,8 +192,3 @@ const Form = () => {
 };
 
 export default Form;
-
-// {
-//   (!formInputValidity.name && <h1>hello</h1>) ||
-//     (!formInputValidity.name && touched(<p></p>));
-// }

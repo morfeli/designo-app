@@ -116,6 +116,19 @@
     list-style: none;
     font-family: $jost;
     cursor: pointer;
+    color: white;
+  }
+
+  &--li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+  }
+  &--li:hover::after {
+    width: 100%;
   }
 
   &--textBox {
@@ -123,10 +136,6 @@
     @include tablet {
       text-align: left;
     }
-  }
-
-  &--li {
-    color: white;
   }
 
   &--strong {
