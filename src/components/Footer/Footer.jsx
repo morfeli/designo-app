@@ -18,7 +18,7 @@ const Footer = () => {
           </Link>
           <hr className="footer__container--divider" />
           <ul className="footer__container--ul">
-            <Link style={{ textDecoration: "none" }} to="/aboutus">
+            <Link style={{ textDecoration: "none" }} to="/about">
               <li className="footer__container--li">OUR COMPANY</li>
             </Link>
             <Link style={{ textDecoration: "none" }} to="/locations">

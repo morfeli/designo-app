@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/LocationCard.scss";
 
 const LocationCard = (props) => {
@@ -12,7 +13,9 @@ const LocationCard = (props) => {
         />
       </div>
       <h3 className="location__li--h3">{props.title}</h3>
-      <button className="location__li--btn">SEE LOCATION</button>
+      <Link to="/locations">
+        <button className="location__li--btn">SEE LOCATION</button>
+      </Link>
     </li>
   );
 };

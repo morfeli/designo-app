@@ -113,6 +113,7 @@
     cursor: pointer;
     font-family: $jost;
     font-weight: $fontmed;
+    margin-top: 1.5rem;
 
     @include desktop {
       position: relative;
@@ -173,9 +174,10 @@
   font-family: $jost;
   font-weight: $fontreg;
   position: relative;
-  bottom: 15px;
+  bottom: 27px;
   text-align: center;
   color: maroon;
+  height: 0px;
 }
 
 .form__container--btn:active {

@@ -1,6 +1,7 @@
 import React from "react";
-import "./styles/HeroHome.scss";
 import HeroImg from "../../assets/home/desktop/image-hero-phone.png";
+import { Link } from "react-router-dom";
+import "./styles/HeroHome.scss";
 
 const HeroHome = () => {
   return (
@@ -15,7 +16,9 @@ const HeroHome = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="hero__container--btn">LEARN MORE</button>
+          <Link to="/about">
+            <button className="hero__container--btn">LEARN MORE</button>
+          </Link>
         </div>
         <div className="hero__container--imgBox">
           <img

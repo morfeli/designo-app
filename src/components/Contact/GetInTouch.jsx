@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/GetInTouch.scss";
 
 const GetInTouch = () => {
@@ -12,7 +13,10 @@ const GetInTouch = () => {
           our expertise can help your business grow.
         </p>
       </div>
-      <button className="contactus__container--btn">GET IN TOUCH</button>
+
+      <Link to="/contact">
+        <button className="contactus__container--btn">GET IN TOUCH</button>
+      </Link>
     </div>
   );
 };
