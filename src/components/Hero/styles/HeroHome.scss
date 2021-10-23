@@ -105,7 +105,6 @@
     cursor: pointer;
     font-family: $jost;
     font-weight: $fontmed;
-    background-color: white;
   }
 
   &--imgBox {
@@ -115,7 +114,12 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: 80px;
+    bottom: -100px;
+  }
+  &--img {
+    width: 279px;
+    height: 573px;
+    object-fit: none;
   }
 }
 
