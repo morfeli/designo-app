@@ -114,6 +114,7 @@
     font-family: $jost;
     font-weight: $fontmed;
     margin-top: 1.5rem;
+    background-color: white;
 
     @include desktop {
       position: relative;
