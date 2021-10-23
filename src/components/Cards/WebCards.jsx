@@ -6,7 +6,7 @@ const WebCards = (props) => {
       <img
         className="webcards__container--img"
         src={props.image}
-        alt="project-image"
+        alt="project"
       />
       <div className="webcards__container--textBox">
         <h1 className="webcards__container--title">{props.title}</h1>

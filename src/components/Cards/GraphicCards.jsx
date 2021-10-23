@@ -6,7 +6,7 @@ const GraphicCards = (props) => {
       <img
         className="graphiccards__container--img"
         src={props.image}
-        alt="project-image"
+        alt="project"
       />
       <div className="graphiccards__container--textBox">
         <h1 className="graphiccards__container--title">{props.title}</h1>

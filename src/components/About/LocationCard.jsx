@@ -6,11 +6,7 @@ const LocationCard = (props) => {
   return (
     <li className="location__li" id={props.id}>
       <div className="location__li--imgBox">
-        <img
-          className="location__li--img"
-          src={props.image}
-          alt="Location Image"
-        />
+        <img className="location__li--img" src={props.image} alt="Location" />
       </div>
       <h3 className="location__li--h3">{props.title}</h3>
       <Link to="/locations">

@@ -7,7 +7,7 @@ const AppCards = (props) => {
         <img
           className="appcards__container--img"
           src={props.image}
-          alt="project-image"
+          alt="project"
         />
       </div>
       <div className="appcards__container--textBox">

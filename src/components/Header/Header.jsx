@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import MobileMenuBtn from "./MobileMenuBtn";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles/Header.scss";
 import Logo from "../../assets/shared/desktop/logo-dark.png";
 
 const Header = () => {
+  const [state, setState] = useState(false);
+
+  const showMenuHandler = () => {
+    setState(!state);
+  };
+
+  const closeMenuHandler = () => {
+    setState(false);
+  };
+
+  let navClasses = "header__container--nav";
+
+  if (state) {
+    navClasses = "header__container--nav open";
+  } else if (!state) {
+    navClasses = "header__container--nav";
+  }
+
   return (
     <header className="header__container">
       <Link to="/">
@@ -14,35 +32,26 @@ const Header = () => {
           alt="Designo Logo"
         />
       </Link>
-      <MobileMenuBtn />
-      <nav className="header__container--nav">
+      <nav className={navClasses}>
         <ul className="header__container--ul">
           <li className="header__container--li">
-            <NavLink
-              style={{ textDecoration: "none", color: "#333136" }}
-              to="/about"
-            >
+            <Link className="link" to="/about" onClick={closeMenuHandler}>
               Our Company
-            </NavLink>
+            </Link>
           </li>
           <li className="header__container--li">
-            <NavLink
-              style={{ textDecoration: "none", color: "#333136" }}
-              to="/locations"
-            >
+            <Link className="link" to="/locations" onClick={closeMenuHandler}>
               Locations
-            </NavLink>
+            </Link>
           </li>
           <li className="header__container--li">
-            <NavLink
-              style={{ textDecoration: "none", color: "#333136" }}
-              to="/contact"
-            >
+            <Link className="link" to="/contact" onClick={closeMenuHandler}>
               Contact
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>
+      <MobileMenuBtn active={state} event={showMenuHandler} />
     </header>
   );
 };

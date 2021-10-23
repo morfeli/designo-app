@@ -24,7 +24,7 @@ const HeroHome = () => {
           <img
             className="hero__container--img"
             src={HeroImg}
-            alt="Frame iPhone Image"
+            alt="Frame iPhone"
           />
         </div>
       </div>
